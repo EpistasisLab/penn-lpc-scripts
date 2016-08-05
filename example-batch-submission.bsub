@@ -1,0 +1,21 @@
+#!/bin/bash
+#BSUB -u EMAIL@upenn.edu
+#BSUB -J job_name[1-10]
+#BSUB -e job_stderr%I.err
+#BSUB -o job_stdout%I.out
+
+# You can submit this batch job by entering "bsub < example-batch-job.bsub" on the command line
+
+# -u specifies what email the job scheduler should send emails to, if necessary
+# -J specifies the job name for the batch
+#        in the brackets, you can specify the job numbers
+#        this current example will submit a batch of 10 jobs with job numbers 1-10
+# -e specifies the file to which the stderr should output
+# -o specifies the file to which the stdout should output
+
+# There are other parameters that you can set (e.g., requested memory), but they are not required
+
+# You can access each batch job's index (i.e., job number) with ${LSB_JOBINDEX}
+echo "hello world ${LSB_JOBINDEX}"
+
+# You can have the batch job run as many commands as you like, including running scripts and other programs
