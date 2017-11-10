@@ -34,7 +34,7 @@ pending_count = 0
 
 for line in out.split('\n'):
     # Change 'moore_' to the name of your lab's queue
-    if 'moore_' in line:
+    if 'moore' in line:
         job_count += 1
     if 'RUN' in line:
         running_count += 1
