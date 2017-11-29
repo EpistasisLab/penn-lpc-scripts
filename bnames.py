@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-                                                                                                           
 
 """                                                                                                                               
-Copyright (c) 2016 Randal S. Olson                                                                                                
+This script was primarily developed by Randal S. Olson (rso@randalolson.com) at the
+University of Pennsylvania.                                                                                       
                                                                                                                                   
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software                                     
 and associated documentation files (the "Software"), to deal in the Software without restriction,                                 
